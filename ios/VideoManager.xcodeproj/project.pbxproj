@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* VideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* VideoManager.m */; };
-		F4FF95D7245B92E800C19C63 /*  VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  VideoManager.swift */; };
+		84A9D3242902031E00975E81 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9D3232902031E00975E81 /* Helpers.swift */; };
+		84A9D32B2902267D00975E81 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9D32A2902267D00975E81 /* VideoView.swift */; };
+		84A9D32D2902269200975E81 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9D32C2902269200975E81 /* Video.swift */; };
+		F4FF95D7245B92E800C19C63 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* VideoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libVideoManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVideoManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A9D3232902031E00975E81 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		84A9D3292902264500975E81 /* VideoView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoView-Bridging-Header.h"; sourceTree = "<group>"; };
+		84A9D32A2902267D00975E81 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		84A9D32C2902269200975E81 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		84A9D32E290226D500975E81 /* VideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* VideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoManager.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* VideoManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoManager-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4FF95D6245B92E800C19C63 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
@@ -52,11 +59,24 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				84A9D327290225F300975E81 /* VideoView */,
+				84A9D3232902031E00975E81 /* Helpers.swift */,
 				F4FF95D6245B92E800C19C63 /* VideoManager.swift */,
 				B3E7B5891CC2AC0600A0062D /* VideoManager.m */,
 				F4FF95D5245B92E700C19C63 /* VideoManager-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		84A9D327290225F300975E81 /* VideoView */ = {
+			isa = PBXGroup;
+			children = (
+				84A9D3292902264500975E81 /* VideoView-Bridging-Header.h */,
+				84A9D32A2902267D00975E81 /* VideoView.swift */,
+				84A9D32C2902269200975E81 /* Video.swift */,
+				84A9D32E290226D500975E81 /* VideoView.m */,
+			);
+			path = VideoView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,8 +136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A9D32B2902267D00975E81 /* VideoView.swift in Sources */,
+				84A9D32D2902269200975E81 /* Video.swift in Sources */,
 				F4FF95D7245B92E800C19C63 /* VideoManager.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* VideoManager.m in Sources */,
+				84A9D3242902031E00975E81 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
