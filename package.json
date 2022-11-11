@@ -1,5 +1,5 @@
 {
-  "name": "react-native-video-manager",
+  "name": "@meedwire/react-native-video-manager",
   "version": "1.0.0-beta",
   "description": "test",
   "main": "lib/commonjs/index",

@@ -1,19 +1,41 @@
 # react-native-video-manager
+
 Package for manager video
+
 ## Installation
 
 ```sh
-npm install react-native-video-manager
+yarn add react-native-video-manager
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "react-native-video-manager";
+import { getFramesVideo } from 'react-native-video-manager';
 
 // ...
 
-const result = await multiply(3, 7);
+const App: React.FC = () => {
+    const [source, setSouce] = useState()
+
+    const getFrames = useCallback(async () => {
+        try {
+            if (!source) return;
+
+            const frames = await getVideoFrames(source);
+
+            setFrames(frames);
+        }catch(e){
+            console.error(e)
+        }
+    }, [source])
+
+    return (
+        <View>
+            <Button title="Retrieve Frames" onPress={getFrames} />
+        <View/>
+    )
+}
 ```
 
 ## Contributing
